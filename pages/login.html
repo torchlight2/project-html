@@ -1,0 +1,16 @@
+<div ng-controller="loginCtrl">
+
+<form name="form" ng-submit="vm.login()" role="form">
+<label for="username">Username</label>
+<input type="text" name="username" id="username" ng-model="username" required /><br>
+
+<label for="password">Password</label>
+
+<input type="password" name="password" id="password" ng-model="password" required /><br>
+<button type="submit" ng-click="submit()">Login</button>
+
+</form>
+
+<a href="#/register" class="btn btn-link">Register</a>
+
+</div>

@@ -1,0 +1,120 @@
+body {
+  background-color: white;
+  color: #666666;
+  font-family: "Open sans", Sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#title-image{
+height: 100px;
+width:200px;
+}
+
+/*Sidebar*/
+aside.sidebar {
+  /*z-index: 10;*/
+  width: 250px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  background-color: #283c51;
+}
+/*Lefr Navigation*/
+#leftNavigation {
+  margin: 2rem 0;
+}
+#leftNavigation, #leftNavigation li ul {
+  list-style: none;
+  padding: 0;
+}
+#leftNavigation li a {
+  font-size: 0.875rem;
+  display: block;
+  padding: 0.8rem 1rem 0.8rem 3rem;
+  color: #adadad;
+  border-bottom: solid 1px #395673;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+#leftNavigation li a:hover {
+  color: white;
+}
+#leftNavigation li ul {
+  display: none;
+  margin: 0;
+  background-color: #17232f;
+}
+#leftNavigation li ul li a {
+  border-bottom: solid 1px #233547;
+}
+#leftNavigation li ul li:last-child a {
+  border-bottom: none;
+}
+#leftNavigation li ul li.active a {
+  color: white;
+}
+#leftNavigation li.active > a {
+  color: white;
+}
+#leftNavigation li.active ul {
+  display: block;
+}
+#leftNavigation > li.active {
+  background-color: #427c97;
+}
+
+
+/* css for <nav> */
+nav {
+  margin-left: 250px;
+  position: fixed;
+  padding: 0px;
+  width: 82%;
+  background-color: #181919;
+}
+nav .item-input{
+  margin:10px;
+  float: right;
+}
+
+#main{
+  color: #FFFFFF;
+  font-size: 20px;
+  padding:20px;
+}
+
+h1.recommended-title { 
+  font-size: 1.5 em; 
+  padding:0;
+  box-shadow:10px 5px 5px #888888;
+}
+
+h1.recommended-title >a{
+margin: 20px;
+}
+
+article .recommended .item{
+  display: inline-block;
+  margin-left: 15px;
+}
+.product-image-wrapper{
+  border:1px solid #F7F7F5;
+  overflow: hidden;
+  margin-bottom:30px;
+}
+
+.productinfo p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696763;
+}

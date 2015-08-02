@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="pocketpadApp">
+
+<head>
+    <!-- Mobile support -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home|Pocketpad</title>
+   
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+     <script src="js/main.js"></script>
+        <script src="js/angular.js"></script>
+         <script src="js/angular-route.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+    <aside class="sidebar">
+
+        <img id="title-image" src="images/pp.jpg">
+
+        <ul id="leftNavigation">
+            <li>
+                <a href="#/home-view">Home</a>
+            </li>
+            <li>
+                <a href="#/libary">Library</a>
+            </li>
+        
+
+             <li class="active">
+                <a href="#/discover">Discover</a>
+                <ul>
+                    <li>
+                        <a href="#/action"></i> Action</a>
+                    </li>
+                    <li>
+                        <a href="#/business">Business</a>
+                    </li>
+                     <li>
+                        <a href="#/children">Children's Fiction</a>
+                    </li>
+                    <li>
+                        <a href="#/cultural">Cultural</a>
+                    </li>
+                     <li>
+                        <a href="#/drama">Drama</a>
+                    </li>
+                    <li>
+                        <a href="#/fantasy">Fantasy</a>
+                    </li>
+                     <li>
+                        <a href="#/guide">Guide/How to</a>
+                    </li>
+                    <li>
+                        <a href="#/history">History</a>
+                    </li>
+
+                     <li>
+                        <a href="#/horror">Horror</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="clickable">
+                <a href="#/create"> Create Story</a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    
+        <nav id="contentRight">
+            <label class="item-input">
+                    <!-- <i class="icon ion-search placeholder-icon"></i> -->
+                    <input type="search" placeholder="Search">
+            </label>
+        </nav>
+
+    <div id="main">
+  
+    <!-- angular templating -->
+        <!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+    </div>
+
+
+
+</body>
+</html>
